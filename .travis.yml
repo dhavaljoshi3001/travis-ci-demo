@@ -58,6 +58,7 @@ env:
 # Update composer
 before-install:
  - composer self-update
+ - gem install bundler
 # Install composer dependencies,
 # Create database, schema and fixtures
 install:
