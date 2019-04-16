@@ -34,7 +34,7 @@
     script:
      - phpunit
     deploy:
-     provider: s3
+       provider: s3
        access_key_id: "AKIAXTC7R6IMR7PYMKGS"
        secret_access_key: "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"
        bucket: "jenkins-vcloud"
