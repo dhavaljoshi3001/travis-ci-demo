@@ -33,6 +33,9 @@
     # Run script
     script:
      - phpunit
+    deploy:
+    - git checkout -b production
+    - git push origin production
     # After a build, send email notification with the build results
     notifications:
      email: dhaval.joshi@viitor.cloud
