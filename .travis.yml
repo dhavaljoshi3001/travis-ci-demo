@@ -34,11 +34,16 @@
     script:
      - phpunit
     deploy:
-       provider: s3
-       access_key_id: "AKIAXTC7R6IMR7PYMKGS"
-       secret_access_key: "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"
-       bucket: "jenkins-vcloud"
-       skip_cleanup: true
+        provider: codedeploy
+        access_key_id: "AKIAXTC7R6IMR7PYMKGS"
+        secret_access_key: "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"
+        bucket: "jenkins-vcloud"
+        key: latest/MyApp.zip
+        bundle_type: zip
+        application: MyApp
+        deployment_group: MyDeploymentGroup
+        on:
+          branch: production
     # After a build, send email notification with the build results
     notifications:
      email: dhaval.joshi@viitor.cloud
