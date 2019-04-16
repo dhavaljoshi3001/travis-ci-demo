@@ -39,8 +39,6 @@
        secret_access_key: "Dhh98t2vsnOGEQQn5z2sflIADl5sih/hI3jduK53"
        bucket: "jenkins-vcloud"
        skip_cleanup: true
-       on:
-         branch: master
     # After a build, send email notification with the build results
     notifications:
      email: dhaval.joshi@viitor.cloud
