@@ -21,20 +21,21 @@
     # Define an environment variable
     env:
      - SYMFONY_VERSION="3.0.*" DB=mysql
+    before_script:
+      - mkdir -p build/logs
     # Install composer dependencies,
     # Create database, schema and fixtures
     install:
-     - sudo apt-get update
-     - pip install urllib3[secure]
-     - pip install coveralls
      - composer install
+     - composer require satooshi/php-coveralls:~0.6@stable
      - cp .env.example .env
      - php artisan key:generate
      #- php bin/console doctrine:schema:create --env=test
      #- php bin/console doctrine:fixtures:load -n --env=test
     script:
-     - nosetests --with-coverage --cover-package=app --cov-report term-missing
-    after_success: coveralls
+     - phpunit --coverage-clover build/logs/clover.xml
+    after_success:
+      - sh -c 'if [ &quot;$TRAVIS_PHP_VERSION&quot; != &quot;hhvm&quot; ]; then php vendor/bin/coveralls -v; fi;'
     # After a build, send email notification with the build results
     notifications:
      email: dhaval.joshi@viitor.cloud
