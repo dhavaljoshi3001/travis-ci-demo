@@ -24,7 +24,6 @@
     # Install composer dependencies,
     # Create database, schema and fixtures
     install:
-     - pip install --upgrade setuptools
      - pip install python-coveralls
      - pip install -r requirements.txt
      - composer install
