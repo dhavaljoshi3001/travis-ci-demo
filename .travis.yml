@@ -24,6 +24,7 @@
     # Install composer dependencies,
     # Create database, schema and fixtures
     install:
+     - python -m pip install --upgrade pip
      - pip install coveralls
      - composer install
      - cp .env.example .env
