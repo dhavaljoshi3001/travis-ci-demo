@@ -29,7 +29,7 @@
      - php artisan key:generate
      #- php bin/console doctrine:schema:create --env=test
      #- php bin/console doctrine:fixtures:load -n --env=test
-    repo_token: 0BCAbyO7038xwKlJFyvaDk3tbXdNPTaUg
+
     # After a build, send email notification with the build results
     notifications:
      email: dhaval.joshi@viitor.cloud
