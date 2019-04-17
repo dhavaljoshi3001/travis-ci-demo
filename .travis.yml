@@ -24,6 +24,8 @@
     # Install composer dependencies,
     # Create database, schema and fixtures
     install:
+     - sudo apt-get update
+     - sudo apt-get install python3.6
      - python -m pip install --upgrade pip
      - pip install coveralls
      - composer install
