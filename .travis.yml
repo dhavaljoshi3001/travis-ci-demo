@@ -24,11 +24,16 @@
     # Install composer dependencies,
     # Create database, schema and fixtures
     install:
+     - pip install --upgrade setuptools
+     - pip install python-coveralls
+     - pip install -r requirements.txt
      - composer install
      - cp .env.example .env
      - php artisan key:generate
      #- php bin/console doctrine:schema:create --env=test
      #- php bin/console doctrine:fixtures:load -n --env=test
+    script:
+     - nosetests --with-coverage --cover-package=app --cov-report term-missing
     after_success: coveralls
     # After a build, send email notification with the build results
     notifications:
