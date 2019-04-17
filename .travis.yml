@@ -24,8 +24,7 @@
     # Install composer dependencies,
     # Create database, schema and fixtures
     install:
-     - pip install python-coveralls
-     - pip install -r requirements.txt
+     - pip install coveralls
      - composer install
      - cp .env.example .env
      - php artisan key:generate
