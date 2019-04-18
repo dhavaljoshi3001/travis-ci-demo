@@ -21,21 +21,38 @@
     # Define an environment variable
     env:
      - SYMFONY_VERSION="3.0.*" DB=mysql
-    before_script:
-      - mkdir -p build/logs
-    # Install composer dependencies,
-    # Create database, schema and fixtures
+    # Install composer dependencies
     install:
      - composer install
-     - composer require satooshi/php-coveralls
      - cp .env.example .env
      - php artisan key:generate
      #- php bin/console doctrine:schema:create --env=test
      #- php bin/console doctrine:fixtures:load -n --env=test
-    script:
-     - phpunit --coverage-clover build/logs/clover.xml
-    after_success:
-      - sh -c 'if [ &quot;$TRAVIS_PHP_VERSION&quot; != &quot;hhvm&quot; ]; then php vendor/bin/coveralls -v; fi;'
+     script: "sbt clean coverage test"
+     after_success: "sbt coveralls"
+     # Run script
+     #script:
+          #- phpunit
+          #- zip -r latest *
+          #- mkdir -p dpl_cd_upload
+          #- mv latest.zip dpl_cd_upload/latest.zip
+     #deploy:
+       #- provider: s3
+         #access_key_id: "AKIAXTC7R6IMR7PYMKGS"
+         #secret_access_key: "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"
+         #local_dir: dpl_cd_upload
+         #skip_cleanup: true
+         #bucket: jenkins-vcloud
+         #region: ap-south-1
+       #- provider: codedeploy
+         #access_key_id: "AKIAXTC7R6IMR7PYMKGS"
+         #secret_access_key: "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"
+         #bucket: jenkins-vcloud
+         #key: latest.zip
+         #bundle_type: zip
+         #application: jenkins-demo
+         #deployment_group: jenkins-demo
+         #region: ap-south-1
     # After a build, send email notification with the build results
     notifications:
      email: dhaval.joshi@viitor.cloud
