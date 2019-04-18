@@ -28,8 +28,6 @@
      - php artisan key:generate
      #- php bin/console doctrine:schema:create --env=test
      #- php bin/console doctrine:fixtures:load -n --env=test
-     script: "sbt clean coverage test"
-     after_success: "sbt coveralls"
      # Run script
      #script:
           #- phpunit
