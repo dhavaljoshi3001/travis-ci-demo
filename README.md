@@ -1,1 +1,1 @@
-[![Build Status](https://travis-ci.org/shahroznawaz/php-notifications.svg?branch=master)](https://travis -ci.org/ shahroznawaz/php-notifications)
+{<img src="https://coveralls.io/repos/github/dhavaljoshi3001/travis-ci-demo/badge.svg?branch=master" alt="Coverage Status" />}[https://coveralls.io/github/dhavaljoshi3001/travis-ci-demo?branch=master]
