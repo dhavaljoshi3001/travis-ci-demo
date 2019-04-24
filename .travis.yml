@@ -26,8 +26,13 @@
      - composer install
      - cp .env.example .env
      - php artisan key:generate
-    after_success:
-     coveralls
+    before_install:
+    - composer require phpunit/phpunit:4.8.* satooshi/php-coveralls:dev-master
+    - composer install --dev
+    script:
+    - ./vendor/bin/phpunit --coverage-clover ./tests/logs/clover.xml
+    after_script:
+    - php vendor/bin/coveralls -v
      #- php bin/console doctrine:schema:create --env=test
      #- php bin/console doctrine:fixtures:load -n --env=test
      # Run script
