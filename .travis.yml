@@ -26,6 +26,7 @@
      - composer install
      - cp .env.example .env
      - php artisan key:generate
+     - bin/atoum --test-all
      #- php atoum.phar --test-it
      #- php bin/console doctrine:schema:create --env=test
      #- php bin/console doctrine:fixtures:load -n --env=test
