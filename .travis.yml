@@ -27,8 +27,6 @@
      - composer require --dev atoum/atoum
      - cp .env.example .env
      - php artisan key:generate
-     - php atoum.phar --test-it
-     - php .atoum.php
      #
      #- php bin/console doctrine:schema:create --env=test
      #- php bin/console doctrine:fixtures:load -n --env=test
@@ -56,6 +54,13 @@
          #deployment_group: jenkins-demo
          #region: ap-south-1
     # After a build, send email notification with the build results
+    script:
+      - vendor/bin/phpunit --coverage-clover coverage.xml
+    after_script:
+      # upload coverage.xml file to Coveralls to analyze it
+      # minimal required coverage is set to 80+ %
+      - wget https://github.com/satooshi/php-coveralls/releases/download/v1.0.1/coveralls.phar
+      - php coveralls.phar --verbose
     notifications:
      webhooks: https://coveralls.io/webhook?repo_token=0BCAbyO7038xwKlJFyvaDk3tbXdNPTaUg
      email: dhaval.joshi@viitor.cloud
