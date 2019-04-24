@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9790f91b-c08d-4d96-b883-9cde2ae352a4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/travis-ci.iml" afterPath="$PROJECT_DIR$/.idea/travis-ci.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,11 +16,9 @@
       <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="28" column="7" lean-forward="false" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-              <folding>
-                <marker date="1556088704901" expanded="true" signature="704:796" ph="install: &lt;3 items&gt;" />
-              </folding>
+            <state relative-caret-position="425">
+              <caret line="29" column="6" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -174,7 +171,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35209000" />
+    <option name="totallyTimeSpent" value="35826000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -236,9 +233,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1556088704901" expanded="true" signature="704:796" ph="install: &lt;3 items&gt;" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -273,9 +268,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1556088704901" expanded="true" signature="704:796" ph="install: &lt;3 items&gt;" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -310,9 +303,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1556088704901" expanded="true" signature="704:796" ph="install: &lt;3 items&gt;" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -328,9 +319,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1075">
           <caret line="43" column="26" lean-forward="false" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
-          <folding>
-            <marker date="1556088704901" expanded="true" signature="704:796" ph="install: &lt;3 items&gt;" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -346,9 +335,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
           <caret line="31" column="6" lean-forward="false" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
-          <folding>
-            <marker date="1556088704901" expanded="true" signature="704:796" ph="install: &lt;3 items&gt;" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -364,9 +351,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-172">
           <caret line="44" column="7" lean-forward="false" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
-          <folding>
-            <marker date="1556088704901" expanded="true" signature="704:796" ph="install: &lt;3 items&gt;" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -406,11 +391,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="28" column="7" lean-forward="false" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-          <folding>
-            <marker date="1556088704901" expanded="true" signature="704:796" ph="install: &lt;3 items&gt;" />
-          </folding>
+        <state relative-caret-position="425">
+          <caret line="29" column="6" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
