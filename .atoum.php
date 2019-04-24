@@ -1,5 +1,4 @@
 <?php
-use mageekguy\atoum;
 use mageekguy\atoum\reports;
 
 $coveralls = new reports\asynchronous\coveralls('src', '0BCAbyO7038xwKlJFyvaDk3tbXdNPTaUg');
