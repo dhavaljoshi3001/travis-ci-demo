@@ -27,7 +27,7 @@
      - cp .env.example .env
      - php artisan key:generate
     before_install:
-    - composer require phpunit/phpunit:4.8.*
+    - composer require phpunit/phpunit
     - composer require --dev php-coveralls/php-coveralls
     - composer install --dev
     script:
