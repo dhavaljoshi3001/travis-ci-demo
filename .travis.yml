@@ -26,14 +26,7 @@
      - composer install
      - cp .env.example .env
      - php artisan key:generate
-    before_install:
-    - composer require phpunit/phpunit
-    - composer require --dev php-coveralls/php-coveralls
-    - composer install --dev
-    script:
-    - ./vendor/bin/phpunit --coverage-clover ./tests/logs/clover.xml
-    after_script:
-    - php vendor/bin/coveralls -v
+     - php atoum.phar --test-it
      #- php bin/console doctrine:schema:create --env=test
      #- php bin/console doctrine:fixtures:load -n --env=test
      # Run script
@@ -61,4 +54,5 @@
          #region: ap-south-1
     # After a build, send email notification with the build results
     notifications:
+     webhooks: https://coveralls.io/webhook?repo_token=0BCAbyO7038xwKlJFyvaDk3tbXdNPTaUg
      email: dhaval.joshi@viitor.cloud
